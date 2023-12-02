@@ -39,6 +39,11 @@ export default function Skills() {
             src={html}
             alt="html"
             w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
           />
 
           <Image
@@ -46,36 +51,66 @@ export default function Skills() {
             src={css}
             alt="css"
             w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
           />
           <Image
             className={style.img}
             src={js}
             alt="js"
             w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
           />
           <Image
             className={style.img}
             src={reactJs}
             alt="reactJs"
             w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
           />
           <Image
             className={style.img}
             src={nodeJs}
             alt="nodeJs"
             w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
           />
           <Image
             className={style.img}
             src={chakraUi}
             alt="chakraUi"
             w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
           />
           <Image
             className={style.img}
             src={gitHub}
             alt="gitHub"
             w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
           />
         </Box>
       </Box>
