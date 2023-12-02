@@ -16,6 +16,7 @@ export default function Home() {
         "Aspiring Developer.",
         "Aspiring Web Developer.",
         "Aspiring Programmer.",
+        "Aspiring React Programmer.",
       ],
       typeSpeed: 50,
       backSpeed: 50,
