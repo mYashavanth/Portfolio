@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Aspairing Developer.",
+        "Aspiring Developer.",
         "Aspiring Web Developer.",
         "Aspiring Programmer.",
       ],

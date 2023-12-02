@@ -16,14 +16,14 @@ export default function About() {
         <Heading>About Me</Heading>
         <Text>
           👋 Greetings! I'm a dedicated professional with a background in
-          Electronics and Communication Engineering from Pes University.
+          Electronics and Communication Engineering from PES University.
           Currently, I'm on an exciting journey into the world of Full Stack Web
           Development, specializing in the MERN stack.
         </Text>
-        <Text>
+        {/* <Text>
           🎓 <b>Education:</b> Completed Electronics and Communication
           Engineering at Pes University.
-        </Text>
+        </Text> */}
         <Text>
           🚀 <b>Current Focus:</b> Actively pursuing Full Stack Web Development
           with expertise in HTML, CSS, JavaScript, and React.
