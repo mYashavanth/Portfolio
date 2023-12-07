@@ -194,7 +194,7 @@ export default function Contact() {
             justifyContent={"space-evenly"}
             p={4}
           >
-            <Box>
+            <Box display={"flex"} flexDirection={"column"} gap={2} mb={4}>
               <Box display={"flex"} alignItems={"center"} gap={2}>
                 <TfiEmail />
                 <Text as={"a"} href="mailto:yashavantham143@gmail.com">
