@@ -1,8 +1,7 @@
-import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import React, { useContext, useEffect, useRef } from "react";
 import Typed from "typed.js";
-import img from "./Yash.jpg";
-import img1 from "./Yash1.jpg";
+import img2 from "./yash.png";
 import Yashavantha_M_Resume from "./Yashavanth.pdf";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
@@ -102,6 +101,7 @@ export default function Home() {
                 backgroundColor: isDark ? "gray.300" : "teal.200",
                 color: isDark ? "gray.900" : "teal.600",
               }}
+              cursor={"pointer"}
             >
               <FaLinkedinIn size={40} />
             </Box>
@@ -112,33 +112,23 @@ export default function Home() {
                 backgroundColor: isDark ? "gray.300" : "teal.200",
                 color: isDark ? "gray.900" : "teal.600",
               }}
+              cursor={"pointer"}
             >
               <FaGithubSquare size={40} />
             </Box>
           </Box>
         </Box>
         <Box w={["100%", "100%", "50%", "50%"]} p={4}>
-          {isDark ? (
-            <Image
-              src={img1}
-              w={{ base: "65%", md: "60%", lg: "60%", xl: "60%" }}
-              borderRadius={"50%"}
-              m={"auto"}
-              boxShadow={
-                "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
-              }
-            />
-          ) : (
-            <Image
-              src={img}
-              w={{ base: "65%", md: "60%", lg: "60%", xl: "60%" }}
-              borderRadius={"50%"}
-              m={"auto"}
-              boxShadow={
-                "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
-              }
-            />
-          )}
+          <Image
+            src={img2}
+            w={{ base: "65%", md: "60%", lg: "60%", xl: "60%" }}
+            borderRadius={"50%"}
+            m={"auto"}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
+            backgroundColor={isDark ? "gray.700" : "teal.900"}
+          />
         </Box>
       </Box>
     </>

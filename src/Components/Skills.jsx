@@ -1,5 +1,5 @@
 import { Box, Heading, Image } from "@chakra-ui/react";
-import React from "react";
+import React, { useContext } from "react";
 import html from "./SkillsImg/html.png";
 import css from "./SkillsImg/css.png";
 import js from "./SkillsImg/javaScript.png";
@@ -8,8 +8,10 @@ import nodeJs from "./SkillsImg/nodeJs.png";
 import chakraUi from "./SkillsImg/chakraUi.png";
 import gitHub from "./SkillsImg/gitHub.png";
 import style from "./Skills.module.css";
+import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 
 export default function Skills() {
+  const { isDark } = useContext(ThemeContext);
   return (
     <>
       <Box
@@ -21,7 +23,9 @@ export default function Skills() {
         flexDirection={"column"}
         gap={4}
       >
-        <Heading>Skills</Heading>
+        <Heading textAlign={"center"} mb={4}>
+          Skills
+        </Heading>
         <Box
           display={"grid"}
           gridTemplateColumns={[
@@ -44,6 +48,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
+            backgroundColor={isDark?"gray.200":"white"}
           />
 
           <Image
@@ -56,6 +61,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
+            backgroundColor={isDark?"gray.200":"white"}
           />
           <Image
             className={style.img}
@@ -67,6 +73,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
+            backgroundColor={isDark?"gray.200":"white"}
           />
           <Image
             className={style.img}
@@ -78,6 +85,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
+            backgroundColor={isDark?"gray.200":"white"}
           />
           <Image
             className={style.img}
@@ -89,6 +97,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
+            backgroundColor={isDark?"gray.200":"white"}
           />
           <Image
             className={style.img}
@@ -100,6 +109,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
+            backgroundColor={isDark?"gray.200":"white"}
           />
           <Image
             className={style.img}
@@ -111,6 +121,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
+            backgroundColor={isDark?"gray.200":"white"}
           />
         </Box>
       </Box>

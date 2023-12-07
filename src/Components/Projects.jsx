@@ -1,4 +1,14 @@
-import { Box, Button, Heading, Image, Text, grid } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  HStack,
+  Heading,
+  Image,
+  Tag,
+  TagLabel,
+  Text,
+  grid,
+} from "@chakra-ui/react";
 import React, { useContext } from "react";
 import thorResume from "./ProjectImg/thorResume.png";
 import boAtclone from "./ProjectImg/boAtclone.png";
@@ -10,7 +20,13 @@ export default function Projects() {
   return (
     <>
       <Box id="projects-section">
-        <Heading w={["90%", "90%", "80%", "80%"]} m={"auto"} p={4}>
+        <Heading
+          w={["90%", "90%", "80%", "80%"]}
+          m={"auto"}
+          p={4}
+          textAlign={"center"}
+          mb={4}
+        >
           Projects
         </Heading>
         <Box
@@ -35,28 +51,43 @@ export default function Projects() {
             borderRadius={"10px"}
             display={"flex"}
             flexDirection={"column"}
+            justifyContent={"space-between"}
             gap={4}
             _hover={{
               boxShadow: "2xl",
               transform: "scale(1.02)",
               transition: "all 0.5s ease",
-              cursor: "pointer",
             }}
+            backgroundColor={isDark ? "gray.200" : "white"}
           >
-            <Box>
-              <Image src={thorResume} borderRadius={"10px"} />
-            </Box>
             <Box display={"flex"} flexDirection={"column"} gap={4}>
+              <Image src={thorResume} borderRadius={"10px"} />
               <Heading>Thor Resume</Heading>
               <Text>
                 Created a dynamic and visually appealing personal portfolio
                 website for Thor, incorporating HTML and CSS to showcase his
                 skills.
               </Text>
-              <Text>
-                <b>Skills</b> : HTML, CSS
-              </Text>
-              <Box display={"flex"}>
+            </Box>
+            <Box display={"flex"} flexDirection={"column"} gap={4}>
+              <HStack display={"flex"} flexWrap={"wrap"} spacing={3}>
+                <b>TechStack :</b>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>HTML</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>CSS</TagLabel>
+                </Tag>
+              </HStack>
+              <Box display={"flex"} gap={4}>
                 <Button
                   backgroundColor={isDark ? "gray.900" : "teal"}
                   color={"white"}
@@ -78,6 +109,27 @@ export default function Projects() {
                     View Project
                   </a>
                 </Button>
+                <Button
+                  backgroundColor={isDark ? "gray.900" : "teal"}
+                  color={"white"}
+                  p={2}
+                  borderRadius={"5px"}
+                  w={"50%"}
+                  //   mx={"25%"}
+                  _hover={{
+                    backgroundColor: isDark ? "gray.300" : "teal.200",
+                    color: isDark ? "gray.900" : "teal.600",
+                  }}
+                  letterSpacing={0.5}
+                >
+                  <a
+                    href="https://github.com/mYashavanth/boAt_Project"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub Link
+                  </a>
+                </Button>
               </Box>
             </Box>
           </Box>
@@ -91,18 +143,17 @@ export default function Projects() {
             borderRadius={"10px"}
             display={"flex"}
             flexDirection={"column"}
+            justifyContent={"space-between"}
             gap={4}
             _hover={{
               boxShadow: "2xl",
               transform: "scale(1.02)",
               transition: "all 0.5s ease",
-              cursor: "pointer",
             }}
+            backgroundColor={isDark ? "gray.200" : "white"}
           >
-            <Box>
-              <Image src={boAtclone} borderRadius={"10px"} />
-            </Box>
             <Box display={"flex"} flexDirection={"column"} gap={4}>
+              <Image src={boAtclone} borderRadius={"10px"} />
               <Heading>boAt App Clone</Heading>
               <Text>
                 Developed a sleek and responsive boat app clone using JavaScript
@@ -111,9 +162,46 @@ export default function Projects() {
                 of a popular boat-related application, showcasing my proficiency
                 in front-end technologies.
               </Text>
-              <Text>
-                <b>Skills</b> : HTML, CSS, javaScript, React, Chakra Ui
-              </Text>
+            </Box>
+            <Box display={"flex"} flexDirection={"column"} gap={4}>
+              <HStack display={"flex"} flexWrap={"wrap"} spacing={3}>
+                <b>TechStack :</b>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>HTML</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>CSS</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>javaScript</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>React</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>Chakra Ui</TagLabel>
+                </Tag>
+              </HStack>
               <Box display={"flex"} gap={4}>
                 <Button
                   backgroundColor={isDark ? "gray.900" : "teal"}
@@ -154,7 +242,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Git Link
+                    GitHub Link
                   </a>
                 </Button>
               </Box>
@@ -170,18 +258,17 @@ export default function Projects() {
             borderRadius={"10px"}
             display={"flex"}
             flexDirection={"column"}
+            justifyContent={"space-between"}
             gap={4}
             _hover={{
               boxShadow: "2xl",
               transform: "scale(1.02)",
               transition: "all 0.5s ease",
-              cursor: "pointer",
             }}
+            backgroundColor={isDark ? "gray.200" : "white"}
           >
-            <Box>
-              <Image src={movieApp} borderRadius={"10px"} />
-            </Box>
             <Box display={"flex"} flexDirection={"column"} gap={4}>
+              <Image src={movieApp} borderRadius={"10px"} />
               <Heading>Movie Details App</Heading>
               <Text>
                 Crafted an engaging Movie Details App using JavaScript and
@@ -190,9 +277,46 @@ export default function Projects() {
                 experience, integrates dynamic data fetching and a modern UI for
                 an immersive movie exploration experience.
               </Text>
-              <Text>
-                <b>Skills</b> : HTML, CSS, javaScript, React, Chakra Ui
-              </Text>
+            </Box>
+            <Box display={"flex"} flexDirection={"column"} gap={4}>
+              <HStack display={"flex"} flexWrap={"wrap"} spacing={3}>
+                <b>TechStack :</b>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>HTML</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>CSS</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>javaScript</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>React</TagLabel>
+                </Tag>
+                <Tag
+                  size="md"
+                  variant="subtle"
+                  colorScheme={isDark ? "yellow" : "teal"}
+                >
+                  <TagLabel>Chakra Ui</TagLabel>
+                </Tag>
+              </HStack>
               <Box display={"flex"} gap={4}>
                 <Button
                   backgroundColor={isDark ? "gray.900" : "teal"}
@@ -233,7 +357,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Git Link
+                    GitHub Link
                   </a>
                 </Button>
               </Box>

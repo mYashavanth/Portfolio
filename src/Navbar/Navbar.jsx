@@ -8,8 +8,10 @@ import {
   IconButton,
   Menu,
   MenuButton,
+  MenuItem,
   MenuList,
   Spacer,
+  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
@@ -20,10 +22,18 @@ import { IoPersonOutline } from "react-icons/io5";
 import { GiSkills } from "react-icons/gi";
 import { GrProjects } from "react-icons/gr";
 import { MdContacts } from "react-icons/md";
+import Yashavantha_M_Resume from "../Components/Yashavanth.pdf";
+import { LiaFileDownloadSolid } from "react-icons/lia";
 
 export default function Navbar() {
   const btnRef = React.useRef();
   const { isDark, setIsDark } = useContext(ThemeContext);
+  const handleResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1o3-P0QLLzMgs6QWYZngc0gHUbNCu2x1H/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   console.log(isDark);
   return (
@@ -48,8 +58,8 @@ export default function Navbar() {
           p={4}
           display={["none", "none", "flex", "flex"]}
           justifyContent={"space-evenly"}
-          w={["auto", "auto", "60%", "45%"]}
-          cursor={"pointer"}
+          w={["auto", "auto", "60%", "50%"]}
+          // cursor={"pointer"}
         >
           <Link
             to="home-section"
@@ -58,7 +68,7 @@ export default function Navbar() {
             offset={-70}
             duration={500}
           >
-            <Box display={"flex"} alignItems={"center"} gap={2}>
+            <Box display={"flex"} alignItems={"center"} gap={1}>
               <FaHome />
               Home
             </Box>
@@ -112,6 +122,25 @@ export default function Navbar() {
               Contact
             </Box>
           </Link>
+          <Center display={"flex"} gap={1}>
+            <LiaFileDownloadSolid size={20} />
+            <Text
+              as={"a"}
+              href={Yashavantha_M_Resume}
+              download="Yashavantha_M_Resume"
+              backgroundColor={isDark ? "gray.900" : "teal"}
+              color={"white"}
+              borderRadius={"5px"}
+              _hover={{
+                backgroundColor: isDark ? "gray.300" : "teal.200",
+                color: isDark ? "gray.900" : "teal.600",
+              }}
+              letterSpacing={0.5}
+              onClick={handleResume}
+            >
+              Resume
+            </Text>
+          </Center>
         </Center>
 
         <Center>
@@ -161,10 +190,12 @@ export default function Navbar() {
                 offset={-70}
                 duration={500}
               >
-                <Box display={"flex"} alignItems={"center"} gap={2}>
-                  <FaHome />
-                  Home
-                </Box>
+                <MenuItem backgroundColor={"transparent"}>
+                  <Box display={"flex"} alignItems={"center"} gap={2}>
+                    <FaHome />
+                    Home
+                  </Box>
+                </MenuItem>
               </Link>
               <Link
                 to="about-section"
@@ -173,10 +204,12 @@ export default function Navbar() {
                 offset={-70}
                 duration={500}
               >
-                <Box display={"flex"} alignItems={"center"} gap={2}>
-                  <IoPersonOutline />
-                  About
-                </Box>
+                <MenuItem backgroundColor={"transparent"}>
+                  <Box display={"flex"} alignItems={"center"} gap={2}>
+                    <IoPersonOutline size={19} />
+                    About
+                  </Box>
+                </MenuItem>
               </Link>
               <Link
                 to="skills-section"
@@ -185,10 +218,12 @@ export default function Navbar() {
                 offset={-70}
                 duration={500}
               >
-                <Box display={"flex"} alignItems={"center"} gap={2}>
-                  <GiSkills />
-                  Skills
-                </Box>
+                <MenuItem backgroundColor={"transparent"}>
+                  <Box display={"flex"} alignItems={"center"} gap={2}>
+                    <GiSkills size={19} />
+                    Skills
+                  </Box>
+                </MenuItem>
               </Link>
               <Link
                 to="projects-section"
@@ -197,10 +232,12 @@ export default function Navbar() {
                 offset={-70}
                 duration={500}
               >
-                <Box display={"flex"} alignItems={"center"} gap={2}>
-                  <GrProjects />
-                  Projects
-                </Box>
+                <MenuItem backgroundColor={"transparent"}>
+                  <Box display={"flex"} alignItems={"center"} gap={2}>
+                    <GrProjects size={17} />
+                    Projects
+                  </Box>
+                </MenuItem>
               </Link>
 
               <Link
@@ -210,104 +247,33 @@ export default function Navbar() {
                 offset={-70}
                 duration={500}
               >
-                <Box display={"flex"} alignItems={"center"} gap={2}>
-                  <MdContacts />
-                  Contact
-                </Box>
+                <MenuItem backgroundColor={"transparent"}>
+                  <Box display={"flex"} alignItems={"center"} gap={2}>
+                    <MdContacts size={18} />
+                    Contact
+                  </Box>
+                </MenuItem>
               </Link>
+              <MenuItem backgroundColor={"transparent"} cursor={"unset"}>
+                <Box display={"flex"} alignItems={"center"} gap={0.2}>
+                  <LiaFileDownloadSolid size={20} />
+                  <Text
+                    as={"a"}
+                    href={Yashavantha_M_Resume}
+                    download="Yashavantha_M_Resume"
+                    color={"white"}
+                    p={2}
+                    letterSpacing={0.5}
+                    onClick={handleResume}
+                    cursor={"pointer"}
+                  >
+                    Resume
+                  </Text>
+                </Box>
+              </MenuItem>
             </MenuList>
           </Menu>
         </Center>
-
-        {/* <Center>
-          <Button
-            ref={btnRef}
-            backgroundColor={isDark ? "gray.900" : "teal"}
-            color={"white"}
-            onClick={onOpen}
-            display={["flex", "flex", "none", "none"]}
-            m={4}
-            _hover={{
-              backgroundColor: isDark ? "black" : "teal.500",
-            }}
-          >
-            <HamburgerIcon />
-          </Button>
-        </Center> */}
-
-        {/* <Drawer
-          isOpen={isOpen}
-          placement="right"
-          onClose={onClose}
-          finalFocusRef={btnRef}
-        >
-          <DrawerOverlay />
-          <DrawerContent>
-            <DrawerCloseButton />
-
-            <DrawerBody
-              display={"flex"}
-              flexDirection={"column"}
-              justifyContent={"space-around"}
-              backgroundColor={isDark ? "gray.500" : "teal.400"}
-              color={"white"}
-              cursor={"pointer"}
-              textAlign={"center"}
-            >
-              <Link
-                to="home-section"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={onClose}
-              >
-                Home
-              </Link>
-              <Link
-                to="about-section"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={onClose}
-              >
-                About
-              </Link>
-              <Link
-                to="skills-section"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={onClose}
-              >
-                Skills
-              </Link>
-              <Link
-                to="projects-section"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={onClose}
-              >
-                Projects
-              </Link>
-
-              <Link
-                to="contact-section"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={onClose}
-              >
-                Contact
-              </Link>
-            </DrawerBody>
-          </DrawerContent>
-        </Drawer> */}
       </Flex>
     </>
   );

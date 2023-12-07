@@ -10,9 +10,14 @@ import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext/ThemeContextProvider";
 
 function App() {
-  const {isDark} = useContext(ThemeContext)
+  const { isDark } = useContext(ThemeContext);
   return (
-    <Box backgroundColor={isDark ? "#9C9C9C" : "#CBFFF3"} display={"flex"} flexDirection={"column"} gap={[8,16,24,24]}>
+    <Box
+      backgroundColor={isDark ? "#9C9C9C" : "teal.50"}
+      display={"flex"}
+      flexDirection={"column"}
+      gap={[8, 16, 24, 24]}
+    >
       <Navbar />
       <Home />
       <About />

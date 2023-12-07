@@ -13,7 +13,7 @@ export default function About() {
         flexDirection={"column"}
         gap={8}
       >
-        <Heading>About Me</Heading>
+        <Heading textAlign={"center"} mb={4}>About Me</Heading>
         <Text>
           👋 Greetings! I'm a dedicated professional with a background in
           Electronics and Communication Engineering from PES University.

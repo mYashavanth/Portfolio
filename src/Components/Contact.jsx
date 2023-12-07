@@ -70,7 +70,13 @@ export default function Contact() {
   return (
     <>
       <Box id="contact-section" pb={16}>
-        <Heading w={["90%", "90%", "80%", "80%"]} m={"auto"} p={4}>
+        <Heading
+          w={["90%", "90%", "80%", "80%"]}
+          m={"auto"}
+          p={4}
+          textAlign={"center"}
+          mb={8}
+        >
           Contact
         </Heading>
         <Box
@@ -78,14 +84,14 @@ export default function Contact() {
             boxShadow: "2xl",
             transform: "scale(1.02)",
             transition: "all 0.5s ease",
-            cursor: "pointer",
           }}
-          borderRadius={{ base: "none", md: "xl" }}
           className="contact"
           boxShadow={{ base: "none", md: "xl" }}
           mx="auto"
           w={{ base: "90%", md: "40%" }}
           p={useBreakpointValue({ base: 4, md: 8 })}
+          backgroundColor={isDark ? "gray.200" : "white"}
+          borderRadius={{ base: "10px", md: "20px" }}
         >
           <Box mb={4} mx="auto" textAlign="center">
             <Heading>Get in touch</Heading>
@@ -103,6 +109,7 @@ export default function Contact() {
                 _hover={{
                   border: isDark ? "1px solid black" : "1px solid teal",
                 }}
+                border={"1px solid gray"}
               />
             </FormControl>
             <FormControl id="email">
@@ -117,6 +124,7 @@ export default function Contact() {
                 _hover={{
                   border: isDark ? "1px solid black" : "1px solid teal",
                 }}
+                border={"1px solid gray"}
               />
             </FormControl>
             <FormControl id="message">
@@ -130,6 +138,7 @@ export default function Contact() {
                 _hover={{
                   border: isDark ? "1px solid black" : "1px solid teal",
                 }}
+                border={"1px solid gray"}
               />
             </FormControl>
             <Button
