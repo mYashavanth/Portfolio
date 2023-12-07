@@ -59,14 +59,19 @@ export default function Navbar() {
           display={["none", "none", "flex", "flex"]}
           justifyContent={"space-evenly"}
           w={["auto", "auto", "60%", "50%"]}
-          // cursor={"pointer"}
         >
           <Link
             to="home-section"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={600}
+            activeClass="active"
+            style={{ cursor: "pointer" }}
+            activeStyle={{
+              color: isDark ? "gold" : "blue",
+              textDecoration: "underline",
+            }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
               <FaHome />
@@ -78,7 +83,13 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={600}
+            activeClass="active"
+            style={{ cursor: "pointer" }}
+            activeStyle={{
+              color: isDark ? "gold" : "blue",
+              textDecoration: "underline",
+            }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
               <IoPersonOutline />
@@ -90,7 +101,13 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={600}
+            activeClass="active"
+            style={{ cursor: "pointer" }}
+            activeStyle={{
+              color: isDark ? "gold" : "blue",
+              textDecoration: "underline",
+            }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
               <GiSkills />
@@ -102,7 +119,13 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={600}
+            activeClass="active"
+            style={{ cursor: "pointer" }}
+            activeStyle={{
+              color: isDark ? "gold" : "blue",
+              textDecoration: "underline",
+            }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
               <GrProjects />
@@ -115,7 +138,13 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={600}
+            activeClass="active"
+            style={{ cursor: "pointer" }}
+            activeStyle={{
+              color: isDark ? "gold" : "blue",
+              textDecoration: "underline",
+            }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
               <MdContacts />
@@ -188,7 +217,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -202,7 +231,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -216,7 +245,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -230,7 +259,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -245,7 +274,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
