@@ -17,6 +17,9 @@ function App() {
       display={"flex"}
       flexDirection={"column"}
       gap={[8, 16, 24, 24]}
+      // fontFamily={"robotoSlab"}
+      fontFamily={"sansSerif"}
+      fontSize={["16px", "16px", "18px", "18px"]}
     >
       <Navbar />
       <Home />

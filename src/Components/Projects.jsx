@@ -26,6 +26,7 @@ export default function Projects() {
           p={4}
           textAlign={"center"}
           mb={4}
+          size={{ base: "xl", md: "2xl" }}
         >
           Projects
         </Heading>
@@ -123,7 +124,7 @@ export default function Projects() {
                   letterSpacing={0.5}
                 >
                   <a
-                    href="https://github.com/mYashavanth/boAt_Project"
+                    href="https://github.com/mYashavanth/Thor_Resume"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -185,7 +186,7 @@ export default function Projects() {
                   variant="subtle"
                   colorScheme={isDark ? "yellow" : "teal"}
                 >
-                  <TagLabel>javaScript</TagLabel>
+                  <TagLabel>JavaScript</TagLabel>
                 </Tag>
                 <Tag
                   size="md"
@@ -300,7 +301,7 @@ export default function Projects() {
                   variant="subtle"
                   colorScheme={isDark ? "yellow" : "teal"}
                 >
-                  <TagLabel>javaScript</TagLabel>
+                  <TagLabel>JavaScript</TagLabel>
                 </Tag>
                 <Tag
                   size="md"

@@ -59,7 +59,7 @@ export default function Home() {
         p={8}
       >
         <Box w={["100%", "100%", "50%", "50%"]} p={4}>
-          <Heading>Hello I Am Yashavantha M</Heading>
+          <Heading>Hi 👋 I Am Yashavantha M</Heading>
           <Text
             as="span"
             margin={{

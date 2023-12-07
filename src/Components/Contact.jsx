@@ -9,8 +9,13 @@ import {
   useBreakpointValue,
   Heading,
   useToast,
+  Text,
+  Center,
 } from "@chakra-ui/react";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
+import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
+import { ImMobile } from "react-icons/im";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -67,15 +72,27 @@ export default function Contact() {
       alert("An error occurred while sending your message.");
     }
   };
+
+  const handleLinkedIN = () => {
+    window.open(
+      "https://www.linkedin.com/in/yashavantha-m-299a17209/",
+      "_blank"
+    );
+  };
+  const handleGitHub = () => {
+    window.open("https://github.com/mYashavanth", "_blank");
+  };
+
   return (
     <>
-      <Box id="contact-section" pb={16}>
+      <Box id="contact-section" pb={1}>
         <Heading
           w={["90%", "90%", "80%", "80%"]}
           m={"auto"}
           p={4}
           textAlign={"center"}
           mb={8}
+          size={{ base: "xl", md: "2xl" }}
         >
           Contact
         </Heading>
@@ -157,6 +174,64 @@ export default function Contact() {
               Submit
             </Button>
           </Stack>
+        </Box>
+
+        <Box
+          backgroundColor={isDark ? "gray.900" : "teal.600"}
+          color="white"
+          mt={8}
+          p={4}
+        >
+          <Box textAlign={"center"}>
+            <Heading size={{ base: "md", md: "lg" }}>Yashavantha M</Heading>
+            <Text fontSize={{ base: "sm", md: "md" }}>
+              Aspiring Full-Stack Web Developer
+            </Text>
+          </Box>
+          <Box
+            display={"flex"}
+            flexDirection={{ base: "column", md: "row" }}
+            justifyContent={"space-evenly"}
+            p={4}
+          >
+            <Box>
+              <Box display={"flex"} alignItems={"center"} gap={2}>
+                <TfiEmail />
+                <Text as={"a"} href="mailto:yashavantham143@gmail.com">
+                  yashavantham143@gmail.com
+                </Text>
+              </Box>
+              <Box display={"flex"} alignItems={"center"} gap={2}>
+                <ImMobile />
+                <Text>+91 9481726689</Text>
+              </Box>
+            </Box>
+
+            <Box display={"flex"} alignItems={"center"} gap={6}>
+              <Box
+                borderRadius={"5px"}
+                onClick={handleLinkedIN}
+                _hover={{
+                  backgroundColor: isDark ? "gray.300" : "teal.200",
+                  color: isDark ? "gray.900" : "teal.600",
+                }}
+                cursor={"pointer"}
+              >
+                <FaLinkedinIn size={20} />
+              </Box>
+              <Box
+                borderRadius={"5px"}
+                onClick={handleGitHub}
+                _hover={{
+                  backgroundColor: isDark ? "gray.300" : "teal.200",
+                  color: isDark ? "gray.900" : "teal.600",
+                }}
+                cursor={"pointer"}
+              >
+                <FaGithubSquare size={20} />
+              </Box>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </>

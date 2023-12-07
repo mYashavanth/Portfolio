@@ -23,7 +23,7 @@ export default function Skills() {
         flexDirection={"column"}
         gap={4}
       >
-        <Heading textAlign={"center"} mb={4}>
+        <Heading textAlign={"center"} mb={4} size={{ base: "xl", md: "2xl" }}>
           Skills
         </Heading>
         <Box
