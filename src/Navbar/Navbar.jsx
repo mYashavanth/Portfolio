@@ -71,7 +71,7 @@ export default function Navbar() {
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
               position: "relative",
-              bottom: "3px",
+              bottom: "5px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -90,7 +90,7 @@ export default function Navbar() {
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
               position: "relative",
-              bottom: "3px",
+              bottom: "5px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -109,7 +109,7 @@ export default function Navbar() {
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
               position: "relative",
-              bottom: "3px",
+              bottom: "5px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -128,7 +128,7 @@ export default function Navbar() {
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
               position: "relative",
-              bottom: "3px",
+              bottom: "5px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -148,7 +148,7 @@ export default function Navbar() {
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
               position: "relative",
-              bottom: "3px",
+              bottom: "5px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
