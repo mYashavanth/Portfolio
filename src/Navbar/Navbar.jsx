@@ -58,7 +58,8 @@ export default function Navbar() {
           p={4}
           display={["none", "none", "flex", "flex"]}
           justifyContent={"space-evenly"}
-          w={["auto", "auto", "60%", "50%"]}
+          w={["auto", "auto", "62%", "55%"]}
+          fontSize={{ base: "sm", md: "md", lg: "lg", xl: "xl" }}
         >
           <Link
             to="home-section"
