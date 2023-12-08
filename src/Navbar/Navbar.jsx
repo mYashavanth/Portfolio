@@ -51,7 +51,7 @@ export default function Navbar() {
         borderRadius={"10px"}
       >
         <Center pl={{ base: 4, md: 8, lg: 10, xl: 12 }}>
-          <Heading size={{ base: "md", md: "md", lg: "lg", xl: "xl" }}>
+          <Heading size={{ base: "md", md: "md", lg: "lg", xl: "lg" }}>
             Yashavantha M
           </Heading>
         </Center>
@@ -61,7 +61,7 @@ export default function Navbar() {
           display={["none", "none", "flex", "flex"]}
           justifyContent={"space-evenly"}
           w={["auto", "auto", "62%", "55%"]}
-          fontSize={{ base: "sm", md: "md", lg: "lg", xl: "xl" }}
+          fontSize={{ base: "sm", md: "md", lg: "lg", xl: "lg" }}
         >
           <Link
             to="home-section"
