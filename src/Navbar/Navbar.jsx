@@ -50,9 +50,11 @@ export default function Navbar() {
         m={"auto"}
         borderRadius={"10px"}
       >
-        <Box p={6} pl={8}>
-          <Heading size={"md"}>Yashavantha M</Heading>
-        </Box>
+        <Center pl={{ base: 4, md: 8, lg: 10, xl: 12 }}>
+          <Heading size={{ base: "md", md: "md", lg: "lg", xl: "xl" }}>
+            Yashavantha M
+          </Heading>
+        </Center>
         <Spacer />
         <Center
           p={4}
