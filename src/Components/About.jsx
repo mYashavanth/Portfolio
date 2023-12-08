@@ -5,7 +5,6 @@ export default function About() {
   return (
     <>
       <Box
-        border={"1px"}
         id="about-section"
         w={["90%", "90%", "80%", "80%"]}
         m={"auto"}

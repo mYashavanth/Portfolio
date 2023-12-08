@@ -19,7 +19,7 @@ export default function Projects() {
   const { isDark } = useContext(ThemeContext);
   return (
     <>
-      <Box id="projects-section" border={"1px"} pt={[8, 16, 24, 24]}>
+      <Box id="projects-section" pt={[8, 16, 24, 24]}>
         <Heading
           w={["90%", "90%", "80%", "80%"]}
           m={"auto"}

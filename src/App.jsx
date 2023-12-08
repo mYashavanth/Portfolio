@@ -14,9 +14,9 @@ function App() {
   return (
     <Box
       backgroundColor={isDark ? "#9C9C9C" : "teal.50"}
-      // display={"flex"}
-      // flexDirection={"column"}
-      // gap={[8, 16, 24, 24]}
+      display={"flex"}
+      flexDirection={"column"}
+      gap={[1, 1, 2, 2]}
       // fontFamily={"robotoSlab"}
       fontFamily={"sansSerif"}
       fontSize={["16px", "16px", "18px", "18px"]}

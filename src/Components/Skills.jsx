@@ -22,7 +22,6 @@ export default function Skills() {
         display={"flex"}
         flexDirection={"column"}
         gap={4}
-        border={"1px"}
         pt={[8, 16, 24, 24]}
       >
         <Heading textAlign={"center"} mb={4} size={{ base: "xl", md: "2xl" }}>

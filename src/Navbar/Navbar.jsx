@@ -64,8 +64,8 @@ export default function Navbar() {
             to="home-section"
             spy={true}
             smooth={true}
-            offset={-85}
-            duration={600}
+            offset={-83}
+            duration={500}
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
@@ -83,8 +83,8 @@ export default function Navbar() {
             to="about-section"
             spy={true}
             smooth={true}
-            offset={-85}
-            duration={600}
+            offset={-82}
+            duration={500}
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
@@ -102,7 +102,7 @@ export default function Navbar() {
             to="skills-section"
             spy={true}
             smooth={true}
-            offset={-85}
+            offset={-83}
             duration={600}
             style={{ cursor: "pointer" }}
             activeStyle={{
@@ -121,7 +121,7 @@ export default function Navbar() {
             to="projects-section"
             spy={true}
             smooth={true}
-            offset={-85}
+            offset={-82}
             duration={600}
             style={{ cursor: "pointer" }}
             activeStyle={{
@@ -141,8 +141,8 @@ export default function Navbar() {
             to="contact-section"
             spy={true}
             smooth={true}
-            offset={-85}
-            duration={600}
+            offset={-83}
+            duration={800}
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
@@ -221,8 +221,8 @@ export default function Navbar() {
                 to="home-section"
                 spy={true}
                 smooth={true}
-                offset={-85}
-                duration={600}
+                offset={-83}
+                duration={1000}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -235,8 +235,8 @@ export default function Navbar() {
                 to="about-section"
                 spy={true}
                 smooth={true}
-                offset={-85}
-                duration={600}
+                offset={-83}
+                duration={1000}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -249,8 +249,8 @@ export default function Navbar() {
                 to="skills-section"
                 spy={true}
                 smooth={true}
-                offset={-85}
-                duration={600}
+                offset={-83}
+                duration={1000}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -263,8 +263,8 @@ export default function Navbar() {
                 to="projects-section"
                 spy={true}
                 smooth={true}
-                offset={-85}
-                duration={600}
+                offset={-83}
+                duration={1000}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -278,8 +278,8 @@ export default function Navbar() {
                 to="contact-section"
                 spy={true}
                 smooth={true}
-                offset={-85}
-                duration={600}
+                offset={-83}
+                duration={1000}
               >
                 <MenuItem backgroundColor={"transparent"}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>

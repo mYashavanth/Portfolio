@@ -57,7 +57,6 @@ export default function Home() {
         justifyContent={"space-around"}
         alignItems={"center"}
         p={8}
-        border={"1px"}
         pt={[8, 16, 24, 24]}
         mt={-2}
       >
