@@ -156,19 +156,32 @@ export default function Navbar() {
               Contact
             </Box>
           </Link>
-          <Center display={"flex"} gap={1}>
+          <Center
+            display={"flex"}
+            gap={1}
+            _hover={{
+              backgroundColor: isDark ? "gray.300" : "teal.200",
+              color: isDark ? "gray.900" : "teal.600",
+              position: "relative",
+              bottom: "2px",
+              borderRadius: "5px",
+              color: "black",
+              textDecoration: "underline",
+            }}
+          >
             <LiaFileDownloadSolid size={20} />
             <Text
               as={"a"}
               href={Yashavantha_M_Resume}
               download="Yashavantha_M_Resume"
-              backgroundColor={isDark ? "gray.900" : "teal"}
-              color={"white"}
+              // backgroundColor={isDark ? "gray.900" : "teal"}
+              // color={"white"}
               borderRadius={"5px"}
-              _hover={{
-                backgroundColor: isDark ? "gray.300" : "teal.200",
-                color: isDark ? "gray.900" : "teal.600",
-              }}
+              // _hover={{
+              //   backgroundColor: isDark ? "gray.300" : "teal.200",
+              //   color: isDark ? "gray.900" : "teal.600",
+              // }}
+              p={1}
               letterSpacing={0.5}
               onClick={handleResume}
             >
