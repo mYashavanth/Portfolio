@@ -22,6 +22,8 @@ export default function Skills() {
         display={"flex"}
         flexDirection={"column"}
         gap={4}
+        border={"1px"}
+        pt={[8, 16, 24, 24]}
       >
         <Heading textAlign={"center"} mb={4} size={{ base: "xl", md: "2xl" }}>
           Skills
@@ -48,7 +50,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
-            backgroundColor={isDark?"gray.200":"white"}
+            backgroundColor={isDark ? "gray.200" : "white"}
           />
 
           <Image
@@ -61,7 +63,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
-            backgroundColor={isDark?"gray.200":"white"}
+            backgroundColor={isDark ? "gray.200" : "white"}
           />
           <Image
             className={style.img}
@@ -73,7 +75,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
-            backgroundColor={isDark?"gray.200":"white"}
+            backgroundColor={isDark ? "gray.200" : "white"}
           />
           <Image
             className={style.img}
@@ -85,7 +87,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
-            backgroundColor={isDark?"gray.200":"white"}
+            backgroundColor={isDark ? "gray.200" : "white"}
           />
           <Image
             className={style.img}
@@ -97,7 +99,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
-            backgroundColor={isDark?"gray.200":"white"}
+            backgroundColor={isDark ? "gray.200" : "white"}
           />
           <Image
             className={style.img}
@@ -109,7 +111,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
-            backgroundColor={isDark?"gray.200":"white"}
+            backgroundColor={isDark ? "gray.200" : "white"}
           />
           <Image
             className={style.img}
@@ -121,7 +123,7 @@ export default function Skills() {
             boxShadow={
               "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
             }
-            backgroundColor={isDark?"gray.200":"white"}
+            backgroundColor={isDark ? "gray.200" : "white"}
           />
         </Box>
       </Box>

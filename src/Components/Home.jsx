@@ -57,6 +57,9 @@ export default function Home() {
         justifyContent={"space-around"}
         alignItems={"center"}
         p={8}
+        border={"1px"}
+        pt={[8, 16, 24, 24]}
+        mt={-2}
       >
         <Box w={["100%", "100%", "50%", "50%"]} p={4}>
           <Heading>Hi 👋 I Am Yashavantha M</Heading>

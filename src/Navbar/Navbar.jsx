@@ -64,13 +64,14 @@ export default function Navbar() {
             to="home-section"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-85}
             duration={600}
-            activeClass="active"
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
+              position: "relative",
+              bottom: "3px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -82,13 +83,14 @@ export default function Navbar() {
             to="about-section"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-85}
             duration={600}
-            activeClass="active"
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
+              position: "relative",
+              bottom: "3px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -100,13 +102,14 @@ export default function Navbar() {
             to="skills-section"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-85}
             duration={600}
-            activeClass="active"
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
+              position: "relative",
+              bottom: "3px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -118,13 +121,14 @@ export default function Navbar() {
             to="projects-section"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-85}
             duration={600}
-            activeClass="active"
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
+              position: "relative",
+              bottom: "3px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -137,13 +141,14 @@ export default function Navbar() {
             to="contact-section"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-85}
             duration={600}
-            activeClass="active"
             style={{ cursor: "pointer" }}
             activeStyle={{
               color: isDark ? "gold" : "blue",
               textDecoration: "underline",
+              position: "relative",
+              bottom: "3px",
             }}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
@@ -216,7 +221,7 @@ export default function Navbar() {
                 to="home-section"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-85}
                 duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
@@ -230,7 +235,7 @@ export default function Navbar() {
                 to="about-section"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-85}
                 duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
@@ -244,7 +249,7 @@ export default function Navbar() {
                 to="skills-section"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-85}
                 duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
@@ -258,7 +263,7 @@ export default function Navbar() {
                 to="projects-section"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-85}
                 duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>
@@ -273,7 +278,7 @@ export default function Navbar() {
                 to="contact-section"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-85}
                 duration={600}
               >
                 <MenuItem backgroundColor={"transparent"}>

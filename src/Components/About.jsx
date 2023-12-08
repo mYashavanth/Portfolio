@@ -5,6 +5,7 @@ export default function About() {
   return (
     <>
       <Box
+        border={"1px"}
         id="about-section"
         w={["90%", "90%", "80%", "80%"]}
         m={"auto"}
@@ -12,6 +13,7 @@ export default function About() {
         display={"flex"}
         flexDirection={"column"}
         gap={8}
+        pt={[8, 16, 24, 24]}
       >
         <Heading textAlign={"center"} mb={4} size={{ base: "xl", md: "2xl" }}>
           About Me

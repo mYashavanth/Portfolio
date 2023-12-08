@@ -85,7 +85,7 @@ export default function Contact() {
 
   return (
     <>
-      <Box id="contact-section" pb={1}>
+      <Box id="contact-section" pb={1} border={"1px"} pt={[8, 16, 24, 24]}>
         <Heading
           w={["90%", "90%", "80%", "80%"]}
           m={"auto"}
