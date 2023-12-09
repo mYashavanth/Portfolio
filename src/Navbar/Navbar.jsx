@@ -71,7 +71,7 @@ export default function Navbar() {
             duration={500}
             style={{ cursor: "pointer" }}
             activeStyle={{
-              color: isDark ? "gold" : "blue",
+              color: isDark ? "gold" : "black",
               textDecoration: "underline",
               position: "relative",
               bottom: "5px",
@@ -90,7 +90,7 @@ export default function Navbar() {
             duration={500}
             style={{ cursor: "pointer" }}
             activeStyle={{
-              color: isDark ? "gold" : "blue",
+              color: isDark ? "gold" : "black",
               textDecoration: "underline",
               position: "relative",
               bottom: "5px",
@@ -109,7 +109,7 @@ export default function Navbar() {
             duration={600}
             style={{ cursor: "pointer" }}
             activeStyle={{
-              color: isDark ? "gold" : "blue",
+              color: isDark ? "gold" : "black",
               textDecoration: "underline",
               position: "relative",
               bottom: "5px",
@@ -128,7 +128,7 @@ export default function Navbar() {
             duration={600}
             style={{ cursor: "pointer" }}
             activeStyle={{
-              color: isDark ? "gold" : "blue",
+              color: isDark ? "gold" : "black",
               textDecoration: "underline",
               position: "relative",
               bottom: "5px",
@@ -148,7 +148,7 @@ export default function Navbar() {
             duration={800}
             style={{ cursor: "pointer" }}
             activeStyle={{
-              color: isDark ? "gold" : "blue",
+              color: isDark ? "gold" : "black",
               textDecoration: "underline",
               position: "relative",
               bottom: "5px",
