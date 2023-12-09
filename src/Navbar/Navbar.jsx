@@ -105,7 +105,7 @@ export default function Navbar() {
             to="skills-section"
             spy={true}
             smooth={true}
-            offset={-83}
+            offset={-82.5}
             duration={600}
             style={{ cursor: "pointer" }}
             activeStyle={{
