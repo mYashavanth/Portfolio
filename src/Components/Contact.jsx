@@ -105,7 +105,7 @@ export default function Contact() {
           className="contact"
           boxShadow={{ base: "none", md: "xl" }}
           mx="auto"
-          w={{ base: "90%", md: "40%" }}
+          w={["90%", "75%", "65%", "40%"]}
           p={useBreakpointValue({ base: 4, md: 8 })}
           backgroundColor={isDark ? "gray.200" : "white"}
           borderRadius={{ base: "10px", md: "20px" }}
