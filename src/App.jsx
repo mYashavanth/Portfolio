@@ -8,6 +8,7 @@ import Contact from "./Components/Contact";
 import { Box } from "@chakra-ui/react";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext/ThemeContextProvider";
+import Statistics from "./Components/Statistics";
 
 function App() {
   const { isDark } = useContext(ThemeContext);
@@ -26,6 +27,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Statistics/>
       <Contact />
     </Box>
   );

@@ -24,13 +24,14 @@ import { GrProjects } from "react-icons/gr";
 import { MdContacts } from "react-icons/md";
 import Yashavantha_M_Resume from "../Components/Yashavanth.pdf";
 import { LiaFileDownloadSolid } from "react-icons/lia";
+import { IoStatsChartSharp } from "react-icons/io5";
 
 export default function Navbar() {
   const btnRef = React.useRef();
   const { isDark, setIsDark } = useContext(ThemeContext);
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1o3-P0QLLzMgs6QWYZngc0gHUbNCu2x1H/view?usp=sharing",
+      "https://drive.google.com/file/d/1qgscQJlLNoWGJVKcsE12hZ-avbFqhCaa/view?usp=sharing",
       "_blank"
     );
   };
@@ -60,8 +61,8 @@ export default function Navbar() {
           p={4}
           display={["none", "none", "flex", "flex"]}
           justifyContent={"space-evenly"}
-          w={["auto", "auto", "62%", "55%"]}
-          fontSize={{ base: "sm", md: "md", lg: "lg", xl: "lg" }}
+          w={["auto", "auto", "66%", "55%"]}
+          fontSize={{ base: "sm", md: "md", lg: "md", xl: "lg" }}
         >
           <Link
             to="home-section"
@@ -77,7 +78,7 @@ export default function Navbar() {
               bottom: "5px",
             }}
           >
-            <Box display={"flex"} alignItems={"center"} gap={1}>
+            <Box display={"flex"} alignItems={"center"} gap={[1, 1, 0.5, 1]}>
               <FaHome />
               Home
             </Box>
@@ -96,7 +97,7 @@ export default function Navbar() {
               bottom: "5px",
             }}
           >
-            <Box display={"flex"} alignItems={"center"} gap={1}>
+            <Box display={"flex"} alignItems={"center"} gap={[1, 1, 0.5, 1]}>
               <IoPersonOutline />
               About
             </Box>
@@ -115,7 +116,7 @@ export default function Navbar() {
               bottom: "5px",
             }}
           >
-            <Box display={"flex"} alignItems={"center"} gap={1}>
+            <Box display={"flex"} alignItems={"center"} gap={[1, 1, 0.5, 1]}>
               <GiSkills />
               Skills
             </Box>
@@ -134,9 +135,28 @@ export default function Navbar() {
               bottom: "5px",
             }}
           >
-            <Box display={"flex"} alignItems={"center"} gap={1}>
+            <Box display={"flex"} alignItems={"center"} gap={[1, 1, 0.5, 1]}>
               <GrProjects />
               Projects
+            </Box>
+          </Link>
+          <Link
+            to="statistics-section"
+            spy={true}
+            smooth={true}
+            offset={-83}
+            duration={600}
+            style={{ cursor: "pointer" }}
+            activeStyle={{
+              color: isDark ? "gold" : "black",
+              textDecoration: "underline",
+              position: "relative",
+              bottom: "5px",
+            }}
+          >
+            <Box display={"flex"} alignItems={"center"} gap={[1, 1, 0.5, 1]}>
+              <IoStatsChartSharp />
+              Statistics
             </Box>
           </Link>
 
@@ -144,7 +164,7 @@ export default function Navbar() {
             to="contact-section"
             spy={true}
             smooth={true}
-            offset={-83}
+            offset={-82}
             duration={800}
             style={{ cursor: "pointer" }}
             activeStyle={{
@@ -154,14 +174,14 @@ export default function Navbar() {
               bottom: "5px",
             }}
           >
-            <Box display={"flex"} alignItems={"center"} gap={1}>
+            <Box display={"flex"} alignItems={"center"} gap={[1, 1, 0.5, 1]}>
               <MdContacts />
               Contact
             </Box>
           </Link>
           <Center
             display={"flex"}
-            gap={1}
+            gap={[1, 1, 0.5, 1]}
             _hover={{
               backgroundColor: isDark ? "gray.300" : "teal.200",
               color: isDark ? "gray.900" : "teal.600",
@@ -286,6 +306,20 @@ export default function Navbar() {
                   <Box display={"flex"} alignItems={"center"} gap={2}>
                     <GrProjects size={17} />
                     Projects
+                  </Box>
+                </MenuItem>
+              </Link>
+              <Link
+                to="statistics-section"
+                spy={true}
+                smooth={true}
+                offset={-83}
+                duration={1000}
+              >
+                <MenuItem backgroundColor={"transparent"}>
+                  <Box display={"flex"} alignItems={"center"} gap={2}>
+                    <IoStatsChartSharp />
+                    Statistics
                   </Box>
                 </MenuItem>
               </Link>

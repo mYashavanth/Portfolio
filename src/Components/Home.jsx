@@ -40,7 +40,7 @@ export default function Home() {
   };
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1o3-P0QLLzMgs6QWYZngc0gHUbNCu2x1H/view?usp=sharing",
+      "https://drive.google.com/file/d/1qgscQJlLNoWGJVKcsE12hZ-avbFqhCaa/view?usp=sharing",
       "_blank"
     );
   };
