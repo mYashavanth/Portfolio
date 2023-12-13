@@ -91,7 +91,7 @@ export default function Contact() {
           m={"auto"}
           p={4}
           textAlign={"center"}
-          mb={8}
+          mb={[4, 4, 8, 8]}
           size={{ base: "xl", md: "2xl" }}
         >
           Contact

@@ -7,7 +7,7 @@ export default function Statistics() {
   return (
     <>
       <Box id="statistics-section" pt={[8, 16, 24, 24]}>
-        <Heading textAlign={"center"} mb={16} size={{ base: "xl", md: "2xl" }}>
+        <Heading textAlign={"center"} mb={[8, 8, 16, 16]} size={{ base: "xl", md: "2xl" }}>
           GitHub Statistics
         </Heading>
         <Box display={"flex"} flexDirection={"column"} gap={8}>

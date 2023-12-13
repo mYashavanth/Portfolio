@@ -28,7 +28,11 @@ export default function Skills() {
         gap={4}
         pt={[8, 16, 24, 24]}
       >
-        <Heading textAlign={"center"} mb={4} size={{ base: "xl", md: "2xl" }}>
+        <Heading
+          textAlign={"center"}
+          mb={[0, 0, 4, 4]}
+          size={{ base: "xl", md: "2xl" }}
+        >
           Skills
         </Heading>
         <Box
@@ -118,7 +122,11 @@ export default function Skills() {
           />
         </Box>
 
-        <Heading textAlign={"center"} mb={4} size={{ base: "xl", md: "2xl" }}>
+        <Heading
+          textAlign={"center"}
+          mb={[0, 0, 4, 4]}
+          size={{ base: "xl", md: "2xl" }}
+        >
           Tools
         </Heading>
         <Box

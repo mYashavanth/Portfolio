@@ -1,10 +1,11 @@
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import React, { useContext, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import img2 from "./yash.png";
 import Yashavantha_M_Resume from "./Yashavanth.pdf";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
+import { LiaFileDownloadSolid } from "react-icons/lia";
 
 export default function Home() {
   const el = useRef(null);
@@ -40,7 +41,7 @@ export default function Home() {
   };
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1qgscQJlLNoWGJVKcsE12hZ-avbFqhCaa/view?usp=sharing",
+      "https://drive.google.com/file/d/1iWOJjHXu2R_sn3Mh4NBkDWJTw_aEY8TO/view?usp=sharing",
       "_blank"
     );
   };
@@ -78,7 +79,39 @@ export default function Home() {
             Electronic & Communication Engineer | Aspiring Full-Stack Web
             Developer
           </Text>
-          <Text
+          <Center
+            w={"25%"}
+            display={"flex"}
+            gap={[1, 1, 0.5, 1]}
+            backgroundColor={isDark ? "gray.900" : "teal"}
+            color={isDark ? "gray.300" : "white"}
+            borderRadius={"5px"}
+            _hover={{
+              backgroundColor: isDark ? "gray.300" : "teal.200",
+              color: isDark ? "gray.900" : "teal.600",
+              position: "relative",
+              bottom: "2px",
+              borderRadius: "5px",
+              color: "black",
+              textDecoration: "underline",
+            }}
+          >
+            <LiaFileDownloadSolid size={20} />
+            <Text
+              as={"a"}
+              href={Yashavantha_M_Resume}
+              download="Yashavantha_M_Resume"
+              borderRadius={"5px"}
+              p={1}
+              letterSpacing={0.5}
+              onClick={handleResume}
+            >
+              Resume
+            </Text>
+          </Center>
+
+          {/* <Text
+          
             as={"a"}
             href={Yashavantha_M_Resume}
             download="Yashavantha_M_Resume"
@@ -94,7 +127,7 @@ export default function Home() {
             onClick={handleResume}
           >
             Resume
-          </Text>
+          </Text> */}
           <Box display={"flex"} mt={["1rem", "1rem", "2rem", "2rem"]} gap={4}>
             <Box
               borderRadius={"5px"}

@@ -25,7 +25,7 @@ export default function Projects() {
           m={"auto"}
           p={4}
           textAlign={"center"}
-          mb={4}
+          mb={[0, 0, 4, 4]}
           size={{ base: "xl", md: "2xl" }}
         >
           Projects
