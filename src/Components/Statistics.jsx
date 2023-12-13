@@ -29,17 +29,17 @@ export default function Statistics() {
             <Image
               src="https://github-readme-stats.vercel.app/api?username=mYashavanth&theme=shades-of-purple&hide_border=false&include_all_commits=true&count_private=true"
               alt="top-languages"
-              w={"40%"}
+              w={["80%","40%"]}
             />
             <Image
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=mYashavanth&theme=shades-of-purple&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
               alt="chandan"
-              w={"37.5%"}
+              w={["80%", "37.5%"]}
             />
             <Image
               src="https://github-readme-streak-stats.herokuapp.com/?user=mYashavanth&theme=shades-of-purple&hide_border=false"
               alt="stat-card"
-              w={"40%"}
+              w={["80%","40%"]}
             />
           </Box>
         </Box>

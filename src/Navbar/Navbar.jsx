@@ -59,9 +59,9 @@ export default function Navbar() {
         <Spacer />
         <Center
           p={4}
-          display={["none", "none", "flex", "flex"]}
+          display={["none", "none", "none", "flex"]}
           justifyContent={"space-evenly"}
-          w={["auto", "auto", "66%", "55%"]}
+          w={["auto", "auto", "auto", "60%"]}
           fontSize={{ base: "sm", md: "md", lg: "md", xl: "lg" }}
         >
           <Link
@@ -239,7 +239,7 @@ export default function Navbar() {
               ref={btnRef}
               backgroundColor={isDark ? "gray.900" : "teal"}
               color={"white"}
-              display={["flex", "flex", "none", "none"]}
+              display={["flex", "flex", "flex", "none"]}
               m={4}
               _hover={{
                 backgroundColor: isDark ? "black" : "teal.500",
