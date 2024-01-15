@@ -18,34 +18,14 @@ import Styledotme from "./ProjectImg/Styledotme.png";
 
 const projectsData = [
   {
-    id: 1,
-    name: "Thor Resume",
-    image: thorResume,
+    id: 5,
+    name: "Weather Forecast Application",
+    image: Styledotme,
     description:
-      "Created a dynamic and visually appealing personal portfolio website for Thor, incorporating HTML and CSS to showcase his skills.",
-    techStack: ["HTML", "CSS"],
-    liveLink: "https://chic-cobbler-6a4a9f.netlify.app/",
-    githubLink: "https://github.com/mYashavanth/Thor_Resume",
-  },
-  {
-    id: 2,
-    name: "boAt App Clone",
-    image: boAtclone,
-    description:
-      "Developed a sleek and responsive boat app clone using JavaScript and React, with a polished user interface created using Chakra UI. This project aimed to replicate the functionality and design of a popular boat-related application, showcasing my proficiency in front-end technologies.",
-    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra UI"],
-    liveLink: "https://bo-at-project.vercel.app/",
-    githubLink: "https://github.com/mYashavanth/boAt_Project",
-  },
-  {
-    id: 3,
-    name: "Movie Details App",
-    image: movieApp,
-    description:
-      "Crafted an engaging Movie Details App using JavaScript and React, designed to provide comprehensive information about movies. The application, developed with a focus on user experience, integrates dynamic data fetching and a modern UI for an immersive movie exploration experience.",
-    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra UI"],
-    liveLink: "https://movie-app-beta-eosin.vercel.app/",
-    githubLink: "https://github.com/mYashavanth/MovieApp",
+      "This single-page weather forecast application provides users with real-time weather details and a 5-day forecast for a selected city. The application is designed to be user-friendly, responsive, and includes additional features for enhanced user experience.",
+    techStack: ["HTML", "CSS", "JavaScript", "React"],
+    liveLink: "https://styledotme.vercel.app/",
+    githubLink: "https://github.com/mYashavanth/Styledotme",
   },
   {
     id: 4,
@@ -58,14 +38,34 @@ const projectsData = [
     githubLink: "https://github.com/mYashavanth/Togglehead",
   },
   {
-    id: 5,
-    name: "Weather Forecast Application",
-    image: Styledotme,
+    id: 3,
+    name: "Movie Details App",
+    image: movieApp,
     description:
-      "This single-page weather forecast application provides users with real-time weather details and a 5-day forecast for a selected city. The application is designed to be user-friendly, responsive, and includes additional features for enhanced user experience.",
-    techStack: ["HTML", "CSS", "JavaScript", "React"],
-    liveLink: "https://styledotme.vercel.app/",
-    githubLink: "https://github.com/mYashavanth/Styledotme",
+      "Crafted an engaging Movie Details App using JavaScript and React, designed to provide comprehensive information about movies. The application, developed with a focus on user experience, integrates dynamic data fetching and a modern UI for an immersive movie exploration experience.",
+    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra UI"],
+    liveLink: "https://movie-app-beta-eosin.vercel.app/",
+    githubLink: "https://github.com/mYashavanth/MovieApp",
+  },
+  {
+    id: 2,
+    name: "boAt App Clone",
+    image: boAtclone,
+    description:
+      "Developed a sleek and responsive boat app clone using JavaScript and React, with a polished user interface created using Chakra UI. This project aimed to replicate the functionality and design of a popular boat-related application, showcasing my proficiency in front-end technologies.",
+    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra UI"],
+    liveLink: "https://bo-at-project.vercel.app/",
+    githubLink: "https://github.com/mYashavanth/boAt_Project",
+  },
+  {
+    id: 1,
+    name: "Thor Resume",
+    image: thorResume,
+    description:
+      "Created a dynamic and visually appealing personal portfolio website for Thor, incorporating HTML and CSS to showcase his skills.",
+    techStack: ["HTML", "CSS"],
+    liveLink: "https://chic-cobbler-6a4a9f.netlify.app/",
+    githubLink: "https://github.com/mYashavanth/Thor_Resume",
   },
 ];
 
@@ -137,42 +137,48 @@ export default function Projects() {
                   ))}
                 </HStack>
                 <Box display={"flex"} gap={4}>
-                  <Button
-                    backgroundColor={isDark ? "gray.900" : "teal"}
-                    color={"white"}
-                    p={2}
-                    borderRadius={"5px"}
-                    w={"50%"}
-                    _hover={{
-                      backgroundColor: isDark ? "gray.300" : "teal.200",
-                      color: isDark ? "gray.900" : "teal.600",
-                    }}
-                    letterSpacing={0.5}
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ width: "50%" }}
                   >
-                    <a href={project.liveLink} target="_blank" rel="noreferrer">
+                    <Button
+                      backgroundColor={isDark ? "gray.900" : "teal"}
+                      color={"white"}
+                      p={2}
+                      borderRadius={"5px"}
+                      w={"100%"}
+                      _hover={{
+                        backgroundColor: isDark ? "gray.300" : "teal.200",
+                        color: isDark ? "gray.900" : "teal.600",
+                      }}
+                      letterSpacing={0.5}
+                    >
                       View Project
-                    </a>
-                  </Button>
-                  <Button
-                    backgroundColor={isDark ? "gray.900" : "teal"}
-                    color={"white"}
-                    p={2}
-                    borderRadius={"5px"}
-                    w={"50%"}
-                    _hover={{
-                      backgroundColor: isDark ? "gray.300" : "teal.200",
-                      color: isDark ? "gray.900" : "teal.600",
-                    }}
-                    letterSpacing={0.5}
+                    </Button>
+                  </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ width: "50%" }}
                   >
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noreferrer"
+                    <Button
+                      backgroundColor={isDark ? "gray.900" : "teal"}
+                      color={"white"}
+                      p={2}
+                      borderRadius={"5px"}
+                      w={"100%"}
+                      _hover={{
+                        backgroundColor: isDark ? "gray.300" : "teal.200",
+                        color: isDark ? "gray.900" : "teal.600",
+                      }}
+                      letterSpacing={0.5}
                     >
                       GitHub Link
-                    </a>
-                  </Button>
+                    </Button>
+                  </a>
                 </Box>
               </Box>
             </Box>
