@@ -41,7 +41,7 @@ export default function Home() {
   };
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1iWOJjHXu2R_sn3Mh4NBkDWJTw_aEY8TO/view?usp=sharing",
+      "https://drive.google.com/file/d/1Wqkqm2YF2lcvMV5xk4bnGaxyzuusZQhn/view?usp=sharing",
       "_blank"
     );
   };
