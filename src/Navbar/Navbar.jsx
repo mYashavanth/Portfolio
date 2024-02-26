@@ -31,7 +31,7 @@ export default function Navbar() {
   const { isDark, setIsDark } = useContext(ThemeContext);
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1Wqkqm2YF2lcvMV5xk4bnGaxyzuusZQhn/view?usp=sharing",
+      "https://drive.google.com/file/d/1cFq8xd4NwDQUYFtVM9lbZyVYiPh5seMF/view?usp=sharing",
       "_blank"
     );
   };
