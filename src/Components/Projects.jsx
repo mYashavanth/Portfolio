@@ -15,15 +15,35 @@ import boAtclone from "./ProjectImg/boAtclone.png";
 import movieApp from "./ProjectImg/movieApp.png";
 import Togglehead from "./ProjectImg/Togglehead.png";
 import Styledotme from "./ProjectImg/Styledotme.png";
+import allegro from "./ProjectImg/allegro.png";
 
 const projectsData = [
+  {
+    id: 6,
+    name: "Allegro Clone Application",
+    image: allegro,
+    description:
+      "I successfully cloned Allegro.pl, replicating its frontend and backend functionalities. This Full Stack E-Commerce Application includes user authentication, product browsing, cart management, and checkout processes. Leveraging technologies like React, Node.js, and MongoDB, I delivered a seamless user experience, demonstrating my expertise in Full Stack Web Development.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "express.js",
+      "MongoDB",
+      "Chakra UI",
+    ],
+    liveLink: "https://allegro-pl.vercel.app/",
+    githubLink: "https://github.com/mYashavanth/allegro.pl",
+  },
   {
     id: 5,
     name: "Weather Forecast Application",
     image: Styledotme,
     description:
       "This single-page weather forecast application provides users with real-time weather details and a 5-day forecast for a selected city. The application is designed to be user-friendly, responsive, and includes additional features for enhanced user experience.",
-    techStack: ["HTML", "CSS", "JavaScript", "React"],
+    techStack: ["HTML", "CSS", "JavaScript", "React.js"],
     liveLink: "https://styledotme.vercel.app/",
     githubLink: "https://github.com/mYashavanth/Styledotme",
   },
@@ -33,7 +53,7 @@ const projectsData = [
     image: Togglehead,
     description:
       "This project showcases a responsive webpage with various sections using Swiper.js to implement carousel functionality, including a top carousel section with navigation dots and autoplay, a card slider supporting mouse and touch gestures, a statistics section with counting animations, and an FAQ section with expandable answers.",
-    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra UI"],
+    techStack: ["HTML", "CSS", "JavaScript", "React.js", "Chakra UI"],
     liveLink: "https://togglehead-alpha.vercel.app/",
     githubLink: "https://github.com/mYashavanth/Togglehead",
   },
@@ -43,7 +63,7 @@ const projectsData = [
     image: movieApp,
     description:
       "Crafted an engaging Movie Details App using JavaScript and React, designed to provide comprehensive information about movies. The application, developed with a focus on user experience, integrates dynamic data fetching and a modern UI for an immersive movie exploration experience.",
-    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra UI"],
+    techStack: ["HTML", "CSS", "JavaScript", "React.js", "Chakra UI"],
     liveLink: "https://movie-app-beta-eosin.vercel.app/",
     githubLink: "https://github.com/mYashavanth/MovieApp",
   },
@@ -53,7 +73,7 @@ const projectsData = [
     image: boAtclone,
     description:
       "Developed a sleek and responsive boat app clone using JavaScript and React, with a polished user interface created using Chakra UI. This project aimed to replicate the functionality and design of a popular boat-related application, showcasing my proficiency in front-end technologies.",
-    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra UI"],
+    techStack: ["HTML", "CSS", "JavaScript", "React.js", "Chakra UI"],
     liveLink: "https://bo-at-project.vercel.app/",
     githubLink: "https://github.com/mYashavanth/boAt_Project",
   },

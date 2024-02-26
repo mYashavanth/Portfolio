@@ -11,6 +11,10 @@ import git from "./SkillsImg/git.png";
 import netlify from "./SkillsImg/netlify.png";
 import postman from "./SkillsImg/postman.png";
 import vercel from "./SkillsImg/vercel.png";
+import cyclic from "./SkillsImg/cyclic.png";
+import express from "./SkillsImg/express.png";
+import mongodb from "./SkillsImg/mongodb.png";
+import railway from "./SkillsImg/railway.png";
 import style from "./Skills.module.css";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 
@@ -120,6 +124,30 @@ export default function Skills() {
             }
             backgroundColor={isDark ? "gray.200" : "white"}
           />
+          <Image
+            className={style.img}
+            src={mongodb}
+            alt="mongodb"
+            w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
+            backgroundColor={isDark ? "gray.200" : "white"}
+          />
+          <Image
+            className={style.img}
+            src={express}
+            alt="express"
+            w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
+            backgroundColor={isDark ? "gray.200" : "white"}
+          />
         </Box>
 
         <Heading
@@ -193,6 +221,32 @@ export default function Skills() {
             className={style.img}
             src={postman}
             alt="postman"
+            w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
+            backgroundColor={isDark ? "gray.200" : "white"}
+          />
+
+          <Image
+            className={style.img}
+            src={cyclic}
+            alt="cyclic"
+            w={["100%", "95%", "85%", "75%"]}
+            borderRadius={"15%"}
+            p={4}
+            boxShadow={
+              "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px"
+            }
+            backgroundColor={isDark ? "gray.200" : "white"}
+          />
+
+          <Image
+            className={style.img}
+            src={railway}
+            alt="railway"
             w={["100%", "95%", "85%", "75%"]}
             borderRadius={"15%"}
             p={4}

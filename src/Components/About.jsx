@@ -18,30 +18,33 @@ export default function About() {
           About Me
         </Heading>
         <Text>
-          👋 Greetings! I'm a dedicated professional with a background in
-          Electronics and Communication Engineering from PES University.
-          Currently, I'm on an exciting journey into the world of Full Stack Web
-          Development, specializing in the MERN stack.
+          👋 Hello there! I'm a dedicated professional with a solid foundation
+          in Electronics and Communication Engineering, having graduated from
+          PES University. Transitioning into the dynamic realm of Full Stack Web
+          Development has been an exhilarating journey for me.
         </Text>
         {/* <Text>
           🎓 <b>Education:</b> Completed Electronics and Communication
           Engineering at Pes University.
         </Text> */}
         <Text>
-          🚀 <b>Current Focus:</b> Actively pursuing Full Stack Web Development
-          with expertise in HTML, CSS, JavaScript, and React.
+          🚀 <b>Current Focus:</b> I've successfully mastered the MERN stack,
+          showcasing proficiency in HTML, CSS, JavaScript, and React to craft
+          immersive web solutions.
         </Text>
         <Text>
-          🌐 <b>Tech Enthusiast:</b> Passionate about leveraging technology to
-          create seamless and engaging web experiences.
+          🌐 <b>Tech Enthusiast:</b> I'm deeply passionate about harnessing
+          technology to architect seamless and captivating online experiences,
+          driven by a commitment to innovation.
         </Text>
         <Text>
-          🔍 <b>Next Steps:</b> Eager to further enhance my skills in Node.js,
-          Express.js, and MongoDB to complete the MERN stack.
+          🔍 <b>Next Steps:</b> Excitedly, I'm gearing up to delve into Python,
+          expanding my skill set to encompass its versatile applications in web
+          development and beyond.
         </Text>
         <Text>
-          Let's connect and explore the exciting possibilities at the
-          intersection of technology and innovation!
+          Let's connect and delve into the endless possibilities at the nexus of
+          technology and creativity!
         </Text>
       </Box>
     </>
