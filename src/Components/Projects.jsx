@@ -77,16 +77,16 @@ const projectsData = [
     liveLink: "https://bo-at-project.vercel.app/",
     githubLink: "https://github.com/mYashavanth/boAt_Project",
   },
-  {
-    id: 1,
-    name: "Thor Resume",
-    image: thorResume,
-    description:
-      "Created a dynamic and visually appealing personal portfolio website for Thor, incorporating HTML and CSS to showcase his skills.",
-    techStack: ["HTML", "CSS"],
-    liveLink: "https://chic-cobbler-6a4a9f.netlify.app/",
-    githubLink: "https://github.com/mYashavanth/Thor_Resume",
-  },
+  // {
+  //   id: 1,
+  //   name: "Thor Resume",
+  //   image: thorResume,
+  //   description:
+  //     "Created a dynamic and visually appealing personal portfolio website for Thor, incorporating HTML and CSS to showcase his skills.",
+  //   techStack: ["HTML", "CSS"],
+  //   liveLink: "https://chic-cobbler-6a4a9f.netlify.app/",
+  //   githubLink: "https://github.com/mYashavanth/Thor_Resume",
+  // },
 ];
 
 export default function Projects() {
